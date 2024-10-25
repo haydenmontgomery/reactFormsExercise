@@ -13,9 +13,9 @@ const Box = ({idx, width, height, bgcolor, deleteBox}) => {
         top: "10px",
         left: "0px"
         }}
-      onClick={() => deleteBox(idx)}
+        onClick={() => deleteBox(idx)}
       >
-        Delete!
+        X
       </button>
     <div
       className="Box"

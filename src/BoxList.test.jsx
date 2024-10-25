@@ -15,19 +15,18 @@ it("matches snapshot", function () {
 it("should add a new box", function () {
   const { queryByText } = render(<BoxList />);
   const addBtn = queryByText("Create Box");
-  expect(queryByText('Delete!')).not.toBeInTheDocument();
+  expect(queryByText('X')).not.toBeInTheDocument();
   fireEvent.click(addBtn);
-  expect(queryByText('Delete!')).toBeInTheDocument();
-  //const deleteBtn = queryByText("Delete!");
+  expect(queryByText('X')).toBeInTheDocument();
 });
 
 it("should add a new box and then delete it", function () {
   const { queryByText } = render(<BoxList />);
   const addBtn = queryByText("Create Box");
-  expect(queryByText('Delete!')).not.toBeInTheDocument();
+  expect(queryByText('X')).not.toBeInTheDocument();
   fireEvent.click(addBtn);
-  expect(queryByText('Delete!')).toBeInTheDocument();
-  const deleteBtn = queryByText("Delete!");
+  expect(queryByText('X')).toBeInTheDocument();
+  const deleteBtn = queryByText("X");
   fireEvent.click(deleteBtn);
-  expect(queryByText('Delete!')).not.toBeInTheDocument();
+  expect(queryByText('X')).not.toBeInTheDocument();
 });

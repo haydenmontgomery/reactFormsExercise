@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import React from 'react'
 import BoxList from './BoxList'
+import TodoList from './TodoList'
 import './App.css'
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
     <>
       <div>
         <BoxList />
+        <br />
+        <br />
+        <TodoList />
       </div>
     </>
   )

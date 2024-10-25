@@ -3,17 +3,16 @@
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    style="position: relative; margin-bottom: 20px;"
+    style="position: relative;"
   >
+    <li
+      style="position: absolute; left: 80px; top: 10px;"
+    />
     <button
-      style="position: absolute; top: 10px; left: 0px;"
+      style="position: absolute; text-align: center; left: 0px;"
     >
       X
     </button>
-    <div
-      class="Box"
-      style="left: 100px;"
-    />
   </div>
 </DocumentFragment>
 `;
